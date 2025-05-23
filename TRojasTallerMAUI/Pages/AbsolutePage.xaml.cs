@@ -1,9 +1,15 @@
-namespace TRojasTallerMAUI.Pages;
-
-public partial class AbsolutePage : ContentPage
+namespace TRojasTallerMAUI.Pages
 {
-    public AbsolutePage()
+    public partial class AbsolutePage : ContentPage
     {
-        InitializeComponent();
+        public AbsolutePage()
+        {
+            InitializeComponent();
+        }
+
+        private async void OnGoToGridClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
+        }
     }
 }
