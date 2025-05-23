@@ -65,6 +65,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Pages\FlexPage.xaml.cs">
+	    <DependentUpon>FlexPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="StackPage.xaml.cs">
 	    <DependentUpon>StackPage.xaml</DependentUpon>
 	  </Compile>
@@ -74,6 +77,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Pages\FlexPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="StackPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
