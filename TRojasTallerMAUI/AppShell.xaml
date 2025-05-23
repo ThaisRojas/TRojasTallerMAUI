@@ -3,13 +3,9 @@
     x:Class="TRojasTallerMAUI.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:TRojasTallerMAUI"
-    Shell.FlyoutBehavior="Flyout"
-    Title="TRojasTallerMAUI">
+    xmlns:pages="clr-namespace:TRojasTallerMAUI.Pages">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <ShellContent Title="Inicio"
+                  ContentTemplate="{DataTemplate pages:MainPage}" />
 
 </Shell>

@@ -2,11 +2,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TRojasTallerMAUI.Pages.FlexPage"
              Title="FlexLayout">
-    <FlexLayout Direction="Row" Wrap="Wrap" JustifyContent="Start" AlignItems="Start" Padding="20">
-        <Button Text="Botón 1" WidthRequest="100" HeightRequest="50" />
-        <Button Text="Botón 2" WidthRequest="100" HeightRequest="50" />
-        <Button Text="Botón 3" WidthRequest="100" HeightRequest="50" />
-        <Button Text="Botón 4" WidthRequest="100" HeightRequest="50" />
-        <Button Text="Ir a AbsoluteLayout" Clicked="OnGoToAbsoluteClicked" Margin="0,20,0,0"/>
+    <FlexLayout
+        Direction="Row"
+        Wrap="Wrap"
+        JustifyContent="Center"
+        AlignItems="Start"
+        Padding="20"
+        AlignContent="Start">
+
+        <Button Text="Botón 1" BackgroundColor="Orange" WidthRequest="100" HeightRequest="50" Margin="0,0,10,10"/>
+        <Button Text="Botón 2" BackgroundColor="Purple" WidthRequest="100" HeightRequest="50" Margin="0,0,10,10"/>
+        <Button Text="Botón 3" BackgroundColor="Orange" WidthRequest="100" HeightRequest="50" Margin="0,0,10,10"/>
+        <Button Text="Botón 4" BackgroundColor="Purple" WidthRequest="100" HeightRequest="50" Margin="0,0,10,10"/>
+
+        <Button 
+            Text="Ir a AbsoluteLayout" 
+            BackgroundColor="MediumPurple" 
+            WidthRequest="200"
+            HeightRequest="50"
+            Margin="0,20,0,0"
+            HorizontalOptions="Center"
+            FlexLayout.AlignSelf="Center"
+            Clicked="OnGoToAbsoluteClicked" />
     </FlexLayout>
 </ContentPage>

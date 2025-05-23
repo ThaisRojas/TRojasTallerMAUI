@@ -1,5 +1,3 @@
-using Microsoft.Maui.Controls;
-
 namespace TRojasTallerMAUI.Pages;
 
 public partial class MainPage : ContentPage
@@ -11,6 +9,6 @@ public partial class MainPage : ContentPage
 
     private async void OnGoToStackClicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new StackPage());
+        await Shell.Current.GoToAsync(nameof(StackPage));
     }
 }

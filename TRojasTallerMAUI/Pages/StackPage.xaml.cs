@@ -9,6 +9,7 @@ public partial class StackPage : ContentPage
 
     private async void OnGoToFlexClicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new FlexPage());
+        await Shell.Current.GoToAsync(nameof(FlexPage));
     }
 }
+

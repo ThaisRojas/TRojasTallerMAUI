@@ -9,7 +9,8 @@ public partial class FlexPage : ContentPage
 
     private async void OnGoToAbsoluteClicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new AbsolutePage());
+        await Shell.Current.GoToAsync(nameof(AbsolutePage));
     }
 }
+
 
